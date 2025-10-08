@@ -83,10 +83,11 @@
   <script>
     function changeImage(lang) {
       let img = document.getElementById("menu");
+      let timestamp = new Date().getTime();
       if(lang == "pt") {
-        img.src = "menu.png";
+        img.src = "menu.png?ver=" + timestamp;
       } else if (lang === "en") {
-        img.src = "menu_en.png";
+        img.src = "menu_en.png?ver=" + timestamp;
       }
     }
   </script>
